@@ -1,0 +1,109 @@
+[gd_scene load_steps=2 format=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 6.0378, 6.37376 )
+
+[node name="Terreno" type="StaticBody2D"]
+
+transform/scale = Vector2( 16.8223, 9.63627 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 0.618284, 0, 0, 0.618284, -13.4118, -14.6026 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 1 )
+shapes/1/transform = Matrix32( 0.643829, 0, 0, 0.643829, -13.2998, 10.0268 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 1 )
+shapes/2/transform = Matrix32( 0.62522, 0, 0, 0.62522, 9.09367, -14.1535 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 1 )
+shapes/3/transform = Matrix32( 0.680923, 0, 0, 0.680923, 8.76142, 9.99039 )
+shapes/3/trigger = false
+shapes/4/shape = SubResource( 1 )
+shapes/4/transform = Matrix32( 0.580683, 0, 0, 5.68339, 30.9872, -1.5502 )
+shapes/4/trigger = false
+shapes/5/shape = SubResource( 1 )
+shapes/5/transform = Matrix32( 0.580683, 0, 0, 5.68339, -31.7957, -1.81146 )
+shapes/5/trigger = false
+shapes/6/shape = SubResource( 1 )
+shapes/6/transform = Matrix32( 4.62817, 0, 0, 0.643703, -0.413048, -33.8995 )
+shapes/6/trigger = false
+shapes/7/shape = SubResource( 1 )
+shapes/7/transform = Matrix32( 4.62817, 0, 0, 0.643703, -0.413048, 30.4363 )
+shapes/7/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="Sprite" type="Sprite" parent="."]
+
+[node name="bloco1" type="CollisionShape2D" parent="."]
+
+transform/pos = Vector2( -13.4118, -14.6026 )
+transform/scale = Vector2( 0.618284, 0.618284 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="bloco2" type="CollisionShape2D" parent="."]
+
+transform/pos = Vector2( -13.2998, 10.0268 )
+transform/scale = Vector2( 0.643829, 0.643829 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 1
+
+[node name="bloco3" type="CollisionShape2D" parent="."]
+
+transform/pos = Vector2( 9.09367, -14.1535 )
+transform/scale = Vector2( 0.62522, 0.62522 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 2
+
+[node name="bloco4" type="CollisionShape2D" parent="."]
+
+transform/pos = Vector2( 8.76142, 9.99039 )
+transform/scale = Vector2( 0.680923, 0.680923 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 3
+
+[node name="blocoLimite1" type="CollisionShape2D" parent="."]
+
+transform/pos = Vector2( 30.9872, -1.5502 )
+transform/scale = Vector2( 0.580683, 5.68339 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 4
+
+[node name="blocoLimite2" type="CollisionShape2D" parent="."]
+
+transform/pos = Vector2( -31.7957, -1.81146 )
+transform/scale = Vector2( 0.580683, 5.68339 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 5
+
+[node name="blocoLimite3" type="CollisionShape2D" parent="."]
+
+transform/pos = Vector2( -0.413048, -33.8995 )
+transform/scale = Vector2( 4.62817, 0.643703 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 6
+
+[node name="blocoLimite4" type="CollisionShape2D" parent="."]
+
+transform/pos = Vector2( -0.413048, 30.4363 )
+transform/scale = Vector2( 4.62817, 0.643703 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 7
+
+
